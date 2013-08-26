@@ -14,7 +14,8 @@ extras.itemPage.init = function() {
   	, title : $container.find('tr:nth-child(3) td:nth-child(2)').text()
   }
   , icons = {
-  	  'open'	: 'images/cross-button.png'
+      'open'  : 'images/cross-button.png'
+  	, 'reopen'	: 'images/cross-button.png'
   	, 'closed'	: 'images/thumb-up.png'
   	, 'not-bug' : 'images/question-button.png'
   	, 'solved'	: 'images/tick-button.png'
