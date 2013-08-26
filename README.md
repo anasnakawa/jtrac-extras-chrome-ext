@@ -14,6 +14,10 @@ since it is not available on Chrome Store..
 1.	Navigate to the ‘App‘ folder inside the extracted zip folder and select it
 1.	Refresh your browser :)
 
+## Will this be published on Chrome Store ?
+
+no.
+
 ## Credits
 
 [Fugue Icons - by Yusuke Kamiyamane](http://p.yusukekamiyamane.com/)
