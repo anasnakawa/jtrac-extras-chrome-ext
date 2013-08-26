@@ -1,0 +1,11 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+    /* Defaults css for cssmin process */
+}
+
+.jtrac-extras-popup {
+	font-family: 'Open Sans';
+	width: 150px;
+}
