@@ -14,4 +14,4 @@ Thumbs.db
 .Trashes
 
 # chrome extension key
-.pem
+*.pem
