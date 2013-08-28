@@ -45,10 +45,10 @@
         "styles/main.css"
       ],
       "js": [
+        "components/jquery/jquery.js",
         "scripts/extras.util.js",
         "scripts/extras.itemPage.js",
         "scripts/extras.listPage.js",
-        "components/jquery/jquery.js",
         "scripts/contentscript.js"
       ],
       "run_at": "document_end",

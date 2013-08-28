@@ -24,3 +24,6 @@ extras.util.parse = function(template, context) {
     return ( typeof context[match] === 'function' ) ? context[match]() : context[match];
   });
 }
+
+// trim string
+extras.util.trim = $.trim;
