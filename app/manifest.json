@@ -4,10 +4,9 @@
   "manifest_version": 2,
   "description": "Adding extra functinoalities to jTrac to improve its usability and the user experience",
   "permissions": [
-    "browsingData",
+    "downloads",
     "tabs",
-    "fileSystem",
-    "downloads"
+    "fileSystem" 
   ],
   "icons": {
       "16": "images/icon-16.png",
@@ -46,6 +45,7 @@
       ],
       "js": [
         "components/jquery/jquery.js",
+        "components/moment/min/moment.min.js",
         "scripts/extras.util.js",
         "scripts/extras.itemPage.js",
         "scripts/extras.listPage.js",
