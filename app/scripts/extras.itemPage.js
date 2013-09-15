@@ -10,6 +10,7 @@
   , historyItemFactory = function($row) {
     var $attatch = $row.children('td').eq(3)
     , url = $attatch.find('span').eq(0).children('span').attr('onclick')
+    , $timeStamp = $row.find('td').last()
     , item = {
         loggedBy: $row.children('td').eq(0).text()
         , status: $row.children('td').eq(1).text()
@@ -22,8 +23,15 @@
                 , url: typeof url === 'string' ? url.substr(120, 90) : url
             }
         }
-        , timeStamp: $row.find('td').last().text()
+        , timeStamp: {
+            element: $timeStamp.get(0)
+          , text: $timeStamp.text()
+        }
     };
+
+    $timeStamp
+        .attr( 'title', item.timeStamp.text )
+        .text( moment( item.timeStamp.text ).fromNow() );
 
     return item;
   }
