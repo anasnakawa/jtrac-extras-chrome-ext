@@ -1,6 +1,6 @@
 {
   "name": "jTrac Extras",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "manifest_version": 2,
   "description": "Adding extra functinoalities to jTrac to improve its usability and the user experience",
   "permissions": [
