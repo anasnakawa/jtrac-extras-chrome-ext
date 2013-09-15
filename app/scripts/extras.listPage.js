@@ -7,6 +7,7 @@
 
 		$('.jtrac-list tr').not('.sortable').each(function() {
 			var $cols = $(this).find('td')
+			, $timeStamp = $cols.eq(6)
 			, issue = {
 				  id: $cols.eq(0).text()
 				, summary: $cols.eq(1).text()
@@ -15,16 +16,16 @@
 				, assignedTo: $cols.eq(4).text()
 				, severity: $cols.eq(5).text()
 				, timeStamp: {
-					  element: $cols.get(6)
-					, text: $cols.eq(6).text()
+					  element: $timeStamp.get(0)
+					, text: $timeStamp.text()
 				}
 			};
 
 			issues.push( issue );
 
-			$( issue.timeStamp.element )
+			$timeStamp
 				.attr( 'title', issue.timeStamp.text )
-				.text( moment( issues.timeStamp.text ).fromNow() );
+				.text( moment( issue.timeStamp.text ).fromNow() );
 		});
 
 	}
